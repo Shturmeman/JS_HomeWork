@@ -69,21 +69,21 @@ var users = [
 
 var sumOfUsers = 0
 
-function User ( name ) {
-  this.name = name
-  this.id = this.counter(name)
+function User(name) {
+    this.name = name
+    this.id = this.counter(name)
 }
 
 User.prototype.counter = function (name) {
-  var counter
-name!=undefined ? counter = sumOfUsers+=1 : counter=this.id
-return counter
+    var counter
+    name != undefined ? counter = sumOfUsers += 1 : counter = this.id
+    return counter
 }
 
 
 var users = [
-  new User ( "Семен" ),
-  new User ( "Антон" ),
-  new User ( "Демьян" ),
-  new User ( "Василий" )
+    new User("Семен"),
+    new User("Антон"),
+    new User("Демьян"),
+    new User("Василий")
 ]
